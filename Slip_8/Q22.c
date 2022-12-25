@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, j, k, np, nf, ref_string[]={12, 15, 12, 18, 6, 8, 11, 12, 19, 12, 6, 8, 12, 15, 19, 8}, frame[10], temp[10], pos,
+    int i, j, k, np, nf, max, ref_string[]={12, 15, 12, 18, 6, 8, 11, 12, 19, 12, 6, 8, 12, 15, 19, 8}, frame[10], temp[10], pos,
         page_found_1, page_found_2, page_found_3, fcount = 0;
 
     printf("Enter the number of pages: ");
@@ -87,7 +87,7 @@ int main()
 
             if (page_found_3 == 0)
             {
-                int max = temp[0];
+                max = temp[0];
                 pos = 0;
 
                 for (k = 1; k < nf; ++k)
