@@ -1,4 +1,4 @@
-// SJF Non-Preemptive
+// SJF Non-Preemptive Shortest Job First
 
 #include <stdio.h>
 int main()
