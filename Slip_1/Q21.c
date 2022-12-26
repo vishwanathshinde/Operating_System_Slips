@@ -1,3 +1,5 @@
+//FIFO page replacement
+
 #include <stdio.h>
 
 int main()
