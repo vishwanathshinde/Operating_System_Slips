@@ -57,7 +57,7 @@ void np_priority()
 void calculate()
 {
     wt[1] = 0;
-    for (int i = 2; i <= np; i++)
+    for (int i = 1; i <= np; i++)
     {
         wt[i] = bt[i - 1] + wt[i - 1];
     }
@@ -70,7 +70,7 @@ void calculate()
         for (int i = k; i < np; i++)
         {
             min = priority[k];
-            if (b > at[i])
+            if (b >= at[i])
             {
                 if (priority[i] < min)
                 {
@@ -87,16 +87,17 @@ void calculate()
                     priority[i] = temp;
                 }
             }
+            k++;
         }
     }
-    k++;
+    
 }
 
 void chart()
 {
     printf("\nProcess\tArrival_Time\tBurst_Time\tPriority\tT_A_T\tWaiting_Time\n");
 
-    for (i = 1; i <= np; i++)
+    for (i = 0; i < np; i++)
     {
         tat[i] = 0;
         wt[i] = 0;
